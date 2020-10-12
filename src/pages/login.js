@@ -1,8 +1,13 @@
-import React from "react"
-import { LoginContainer } from "../containers"
+import React, { Fragment } from "react";
+import { LoginContainer, HeaderContainer } from "../containers";
 
 function Login() {
-  return <LoginContainer />
+  return (
+    <Fragment>
+      <HeaderContainer />
+      <LoginContainer />
+    </Fragment>
+  );
 }
 
-export default Login
+export default Login;
