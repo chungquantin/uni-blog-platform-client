@@ -40,8 +40,8 @@ export const InputField = styled(TextField)`
 
 export const Button = styled(MUIButton)`
   && {
-    margin-top: 50px;
-    background-color: rgb(71, 178, 239);
+    margin-top: 30px;
+    background-color: #ffb545;
     color: white;
     font-weight: bold;
     &:hover {

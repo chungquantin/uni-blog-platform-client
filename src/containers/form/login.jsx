@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, FlexBox } from "../../components";
 import { Formik, Field } from "formik";
+import * as ASSETS from "../../constants/assets";
 
 function LoginContainer() {
   return (
@@ -14,6 +15,14 @@ function LoginContainer() {
     >
       {({ values, errors, handleSubmit, isSubmitting }) => (
         <Form width="400px" height="600px" direction="column">
+          <img
+            src={ASSETS.LOGIN_JUMBOTRON}
+            alt="Connect with world"
+            style={{
+              width: "110px",
+              marginBottom: "10px",
+            }}
+          />
           <Form.Header>Chào mừng bạn!</Form.Header>
           <Form.Body>Chúng tôi rất vui vì sự có mặt của bạn ở đây</Form.Body>
           <Form.Base onSubmit={handleSubmit}>
